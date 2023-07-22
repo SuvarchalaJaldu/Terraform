@@ -18,7 +18,7 @@ pipeline {
         stage('Plan') {
             steps {
                 script {
-                    def terraformDir = "$WORKSPACE/seleniumprojectAWS/terraform"
+                    def terraformDir = "$WORKSPACE"
                     bat "terraform --version" 
                     bat "cd ${terraformDir} && terraform init"
                     bat "cd ${terraformDir} && terraform plan -out tfplan"
