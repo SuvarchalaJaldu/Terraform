@@ -44,7 +44,7 @@ pipeline {
 
         stage('Apply') {
             steps {
-                bat "cd $WORKSPACE/seleniumprojectAWS/terraform && terraform apply -input=false tfplan"
+                bat "cd $WORKSPACE && terraform apply -input=false tfplan"
             }
         }
     }
