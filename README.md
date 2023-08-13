@@ -25,9 +25,9 @@ This project is centered around automating the deployment of AWS EC2 instances u
 2. Plan and apply your configurations:
 
 ```bash
-Copy code
 terraform plan
-terraform apply```
+```bash
+terraform apply
 
 ## Jenkins setup:
 
