@@ -16,6 +16,11 @@ This project is centered around automating the deployment of AWS EC2 instances u
 3. Update the Terraform configuration files with your AWS credentials or configure AWS CLI.
 4. Deploy using Terraform commands or through Jenkins pipeline.
 
+## Jenkins setup:
+
+Configure your Jenkins server to point to this repository.
+Create a new Jenkins pipeline and use the provided Jenkinsfile.
+
 ## Usage
 
 1. Initialize Terraform:
@@ -26,10 +31,4 @@ This project is centered around automating the deployment of AWS EC2 instances u
 
 ```bash
 terraform plan
-```bash
 terraform apply
-
-## Jenkins setup:
-
-Configure your Jenkins server to point to this repository.
-Create a new Jenkins pipeline and use the provided Jenkinsfile.
